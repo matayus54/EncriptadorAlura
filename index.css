@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	text-transform: capitalize;
+	font-size: 1.5vw;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lobster Two', cursive;
+}
+p {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	padding: 1vw;
+	background: #d4dbf9;
+}
+
+.alinearDerecha {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.logo {
+	width: 25vw;
+}
+
+.container {
+	display: grid;
+	/* border: 1px solid black; */
+	height: 90vh;
+}
+
+.campo {
+	padding: 1vw;
+	margin: 0 0.5vw;
+	/* border: 1px solid black; */
+	height: 80vh;
+	display: grid;
+	background: linear-gradient(#b8cee2, #a9c1d6, #c8b69d);
+	border-radius: 3vw;
+	/* #d17b03, #0a3871  #1559ad,*/
+
+	opacity: 0.7;
+}
+
+.campo:hover {
+	transform: scale(1.00001);
+	transition: 0.4s;
+	opacity: 1;
+}
+
+.texto {
+	resize: none;
+	border: none;
+	height: 20vw;
+	background: none;
+	outline: none;
+	width: 55vw;
+}
+
+.texto::-webkit-input-placeholder {
+	color: #092241;
+}
+
+.subindice {
+	font-size: calc(0.8rem);
+}
+
+.botones {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.btn {
+	padding: 0.5vw 2vw;
+	border-radius: 3vw;
+	background: #609ed4;
+	color: azure;
+	font-size: 1.2vw;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	transition: 0.4s;
+	background: #0a3871;
+}
+
+.btn:active {
+	background: #041121;
+	color: #fff;
+}
+.derechaAlineacion {
+	display: block;
+	text-align: center;
+	word-break: break-all;
+}
+
+.imagen {
+	width: 15vw;
+}
+
+/* Estilos para PC's */
+@media screen and (min-width: 769px) {
+	.container {
+		grid-auto-flow: column;
+		grid-template-columns: 64vw 34vw;
+	}
+}
+
+/* Estilos para tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	* {
+		font-size: 5vw;
+	}
+
+	.logo {
+		width: 45vh;
+	}
+
+	.container {
+		grid-auto-flow: row;
+	}
+
+	.campo {
+		width: 90vw;
+		height: 42vh;
+	}
+
+	.texto {
+		width: 85vw;
+		height: 8vh;
+	}
+
+	.btn {
+		font-size: 6vw;
+	}
+
+	.imagen {
+		width: 15vh;
+	}
+}
+
+/* Estilos para dispositivos móviles celulares*/
+@media screen and (max-width: 480px) {
+	* {
+		font-size: 5vw;
+	}
+
+	.logo {
+		width: 65vw;
+	}
+
+	.container {
+		grid-auto-flow: row;
+	}
+
+	.campo {
+		width: 90vw;
+		height: 42vh;
+	}
+
+	.texto {
+		width: 85vw;
+	}
+
+	.btn {
+		font-size: 6vw;
+	}
+
+	.imagen {
+		width: 20vh;
+	}
+}
