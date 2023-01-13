@@ -1,0 +1,6 @@
+# Ignora imagenes
+*.png
+./img
+*.svg
+# Ignora estilos
+*.css

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Encriptador</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div>
+			<div class="container">
+				<div class="campo">
+					<div class="alinearDerecha">
+						<img class="logo" src="./img/logo.svg" alt="" />
+					</div>
+					<textarea
+						id="texto"
+						class="texto"
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+						placeholder="ingrese el texto aquí"
+					></textarea>
+					<p class="botones">
+						<button id="encriptar" class="btn">
+							<i class="fas fa-lock"></i> encriptar
+						</button>
+						<button id="desencriptar" class="btn">
+							<i class="fas fa-unlock"></i>
+							desencriptar
+						</button>
+					</p>
+				</div>
+				<div class="campo">
+					<div id="desencriptado" class="derechaAlineacion">
+						<img
+							class="imagen"
+							src="https://i.imgur.com/B56uXg9.png"
+							alt="lupitaDeDroopy"
+						/>
+						<p>ningun mensaje fue encontrado</p>
+						<p class="subindice">
+							ingresa el texto que deseas encriptar o desencriptar
+						</p>
+					</div>
+					<p class="botones">
+						<button id="copiar" class="btn">
+							<i class="far fa-copy"></i> copiar
+						</button>
+					</p>
+				</div>
+			</div>
+			<p>todos los derechos reservados © desarrollado por arthur mazius</p>
+		</div>
+		<script src="index.js"></script>
+		<script
+			src="https://kit.fontawesome.com/24a2260742.js"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
